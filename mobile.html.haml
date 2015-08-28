@@ -21,11 +21,12 @@
         %form#register{ method: "post" }
           %h2 Register for the Launch
           %label{ for: "name"} Name
-          %input#name{ name: "name", placeholder: "Thomas A Anderson", required: "", type: "text"}
+          %input#name{ name: "name", placeholder: "Thomas A Anderson", required: "", type: "text"}/
           %label{ for: "email"} Email address
-          %input#email{ name: 'email', type: 'email', placeholder: "neo@example.com", required: "" }
+          %input#email{ name: 'email', type: 'email', placeholder: "neo@example.com", required: "" }/
           %label{ for: "tel"} Telephone
-          %input#tel{type: "tel", name: "tel", placeholder: "(555) 555 5555", required: ""}
+          %input#tel{type: "tel", name: "tel", placeholder: "(555) 555 5555", required: ""}/
+          %input{type: 'submit', value: 'Sign up'}/
     #section1
       .container
         %h2 What will I learn?
@@ -42,6 +43,7 @@
             Sorry your browser doesn't support the video.
             =succeed "." do
               %a{href: "udacity.mov"} Download the video.
+          %br/
     #section2
       %h2 Instructors
       %p The worlds leading mobile authorities
